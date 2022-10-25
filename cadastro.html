@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .usuario-conteudo {
+            background-color: #EEE;
+			padding: 20px 20px 10px 20px;
+            margin-top: 30px;
+        }
+    </style>
+    <div class="container" >
+        <div class="row">
+            <h1 style="margin-left:35%">Cadastro de Usuários</h1>
+            <div class="col-md-6">
+                <div class="usuario-conteudo">
+                    <form method="get" action=".">
+                        <div class="form-group">
+                            <label for="cep">Cep*</label>
+                            <input type="text" class="form-control" id="cep" placeholder="Informe o CEP" onblur="pesquisacep(this.value);" maxlength="8">
+                        </div>
+                        <div class="form-group">
+                            <label for="rua">Rua</label>
+                            <input type="text" class="form-control" id="rua" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="estado">Estado</label>
+                            <input type="text" class="form-control" id="uf" readonly>
+                        </div>
+                        <br>
+                    </form>
+                    
+                </div>
+
+            </div>
+    
+</body>
+</html>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="funcao.js"></script>
